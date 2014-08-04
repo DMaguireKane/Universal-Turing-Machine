@@ -41,6 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>C:\Users\Darragh\Dropbox\VS2013 Projects\UniversalTuringMachine\UniversalTuringMachine\pdcurses;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\Darragh\Dropbox\VS2013 Projects\UniversalTuringMachine\UniversalTuringMachine\pdcurses;$(LibraryPath)</LibraryPath>
+    <TargetName>turing</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

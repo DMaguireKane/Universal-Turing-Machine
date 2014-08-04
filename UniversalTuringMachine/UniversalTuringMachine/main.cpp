@@ -13,19 +13,19 @@ int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
-		cout << argc << "Usage: turing [Turing Instructions Filepath] [Input String]" << endl
+		cout << argc << "Usage: turing [Turing Machine Instructions Filepath] [Input String]" << endl
 			<< "Example: turing \"C:\\my_turing_instructions.txt\" abbabaabaa" << endl;
 		return 1;
 	}
 
 	string filepath = argv[1];
 	string inputString = argv[2];
-	bool isAutoStepped = false;
+	bool isAutoStepped = true;
 	
 	WINDOW *console = SetupCurses();
 
 	TuringMachine tm(filepath, inputString);
-	tm.PrintRuleset();
+	//tm.PrintRuleset();
 	tm.Start(isAutoStepped);
 
 	TearDownCurses(console);
