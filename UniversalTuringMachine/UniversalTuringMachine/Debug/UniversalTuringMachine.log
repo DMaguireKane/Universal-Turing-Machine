@@ -1,0 +1,13 @@
+﻿Build started 04/08/2014 22:59:00.
+     1>Project "c:\Users\Darragh\Dropbox\VS2013 Projects\UniversalTuringMachine\UniversalTuringMachine\UniversalTuringMachine.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         copy "c:\Users\Darragh\Dropbox\VS2013 Projects\UniversalTuringMachine\UniversalTuringMachine\pdcurses\pdcurses.dll" "c:\users\darragh\Dropbox\VS2013 Projects\UniversalTuringMachine\Debug\pdcurses.dll"
+         :VCEnd
+                 1 file(s) copied.
+       Link:
+         UniversalTuringMachine.vcxproj -> c:\users\darragh\Dropbox\VS2013 Projects\UniversalTuringMachine\Debug\UniversalTuringMachine.exe
+     1>Done Building Project "c:\Users\Darragh\Dropbox\VS2013 Projects\UniversalTuringMachine\UniversalTuringMachine\UniversalTuringMachine.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.06

@@ -1,0 +1,9 @@
+0 0 X R 1
+0 X X * halt
+1 * * R 1
+1 X X L 2
+1 _ _ L 2
+2 1 X L 3
+2 X X L 3
+3 * * L 3
+3 X X R 0
