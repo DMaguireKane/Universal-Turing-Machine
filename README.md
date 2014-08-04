@@ -13,7 +13,8 @@ At each step of the turing machine the turing machine tape is displayed along wi
 
 Usage: turing [Turing Machine Instructions Filepath] [Input String]
 
-    Example: turing "BinaryToDecimal.txt" 101
+Example: turing "BinaryToDecimal.txt" 101
+![universal-turing-machine](images/universal_turing_machine_example.PNG)
 
     "BinaryToDecimal.txt"
     ---------------------
@@ -43,5 +44,3 @@ Usage: turing [Turing Machine Instructions Filepath] [Input String]
 
     C * _ R C
     C _ _ * halt
-
-![universal-turing-machine](images/universal_turing_machine_example.PNG)
