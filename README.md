@@ -17,7 +17,7 @@ Example: turing "BinaryToDecimal.txt" 101
 ![universal-turing-machine](images/universal_turing_machine_example.PNG)
 
 * The turing machine command set must follow the following conventions:
- * Each line must be in the form [Input State] [Read] [Write] [Direction] [Output State] called a quintuple.
+ * Each line must be in the form **[Input State]** **[Read]** **[Write]** **[Direction]** **[Output State]** called a quintuple.
  * Input & Output State symbols can be strings of any length >= 1.
  * Read & Write symbols can be any single character except whitespace (Use '_' to represent whitespace).
  * Direction can be 'L' for move left, 'R' for move right or '*' for do not move.
@@ -25,7 +25,7 @@ Example: turing "BinaryToDecimal.txt" 101
  * Each quintuple must be separated by a breakline.
 
 
-    "BinaryToDecimal.txt"
+    BinaryToDecimal.txt
     ---------------------
     0 * * R 0
     0 _ _ L 1
