@@ -2,8 +2,8 @@ Universal-Turing-Machine
 ========================
 
 Universal turing machine emulator run from command line.
-The user specifies some turing machine instruction to be emulated against an input string.
-At each step of the turing machine the turing machine tape is displayed along with the tape cursor position.
+The user specifies the filepath to a set of turing machine commands to be emulated against an input string.
+At each step of the turing machine the tape is displayed along with the highlighted tape current position.
 
 * The machine runs until one of three events happen:
  * The Turing machine finishes successfully when the "halt" state is reached.
@@ -11,10 +11,19 @@ At each step of the turing machine the turing machine tape is displayed along wi
  * Time stands still (infinite loop)
 
 
-Usage: turing [Turing Machine Instructions Filepath] [Input String]
+Usage: turing [Turing Machine Command Set Filepath] [Input String]
 
 Example: turing "BinaryToDecimal.txt" 101
 ![universal-turing-machine](images/universal_turing_machine_example.PNG)
+
+* The turing machine command set must follow the following conventions:
+ * Each line must be in the form [Input State] [Read] [Write] [Direction] [Output State] called a quintuple.
+ * Input & Output State symbols can be strings of any length >= 1.
+ * Read & Write symbols can be any single character except whitespace (Use '_' to represent whitespace).
+ * Direction can be 'L' for move left, 'R' for move right or '*' for do not move.
+ * Each symbol in a quintuple must be separated by at least one space.
+ * Each quintuple must be separated by a breakline.
+
 
     "BinaryToDecimal.txt"
     ---------------------
