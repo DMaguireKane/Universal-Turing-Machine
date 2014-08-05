@@ -11,10 +11,13 @@ At each step of the turing machine the tape is displayed along with the highligh
  * Time stands still (infinite loop)
 
 
-Usage: turing [Turing Machine Command Set Filepath] [Input String]
+Usage: turing [Turing Machine Commands Filepath] [Input String]
 
 Example: turing "BinaryToDecimal.txt" 101
 ![universal-turing-machine](images/universal_turing_machine_example.PNG)
+
+    fhgjfd
+    gfgfhffh
 
 * The turing machine command set must follow the following conventions:
  * Each line must be in the form **[Input State]** **[Read]** **[Write]** **[Direction]** **[Output State]** called a quintuple.
@@ -24,18 +27,17 @@ Example: turing "BinaryToDecimal.txt" 101
  * Each symbol in a quintuple must be separated by at least one space.
  * Each quintuple must be separated by a breakline.
 
+Example Turing Machine Commands File: BinaryToDecimal.txt
 
-    BinaryToDecimal.txt
-    ---------------------
     0 * * R 0
     0 _ _ L 1
-
+    
     1 0 1 L 1
     1 _ _ R C
     1 1 0 L 2
     2 * * L 2
     2 _ _ L 3
-
+    
     3 9 0 L 3
     3 _ 1 R 4
     3 0 1 R 4
@@ -47,9 +49,9 @@ Example: turing "BinaryToDecimal.txt" 101
     3 6 7 R 4
     3 7 8 R 4
     3 8 9 R 4
-
+    
     4 * * R 4
     4 _ _ R 0
-
+    
     C * _ R C
     C _ _ * halt
