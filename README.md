@@ -1,7 +1,7 @@
 Universal-Turing-Machine
 ========================
 
-Universal turing machine emulator run from command line.
+C++ universal turing machine emulator run from command line.
 The user specifies the filepath to a set of turing machine commands to be emulated against an input string.
 At each step of the turing machine the tape is displayed along with the highlighted tape current position.
 
@@ -11,13 +11,11 @@ At each step of the turing machine the tape is displayed along with the highligh
  * Time stands still (infinite loop)
 
 
-Usage: turing [Turing Machine Commands Filepath] [Input String]
+**Usage: turing [Turing Machine Commands Filepath] [Input String]**
 
 Example: turing "BinaryToDecimal.txt" 101
 ![universal-turing-machine](images/universal_turing_machine_example.PNG)
 
-    fhgjfd
-    gfgfhffh
 
 * The turing machine command set must follow the following conventions:
  * Each line must be in the form **[Input State]** **[Read]** **[Write]** **[Direction]** **[Output State]** called a quintuple.
