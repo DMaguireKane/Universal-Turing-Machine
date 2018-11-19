@@ -6,9 +6,9 @@ The user specifies the filepath to a set of turing machine commands to be emulat
 At each step of the turing machine the tape is displayed along with the highlighted tape current position.
 
 * The machine runs until one of three events happen:
- * The Turing machine finishes successfully when the "halt" state is reached.
- * The Turing machine crashes due to being badly designed and/or badly formed input string.
- * Time stands still (infinite loop)
+  * The Turing machine finishes successfully when the "halt" state is reached.
+  * The Turing machine crashes due to being badly designed and/or badly formed input string.
+  * Time stands still (infinite loop)
 
 
 **Usage: turing [Turing Machine Commands Filepath] [Input String]**
@@ -18,12 +18,16 @@ Example: turing "BinaryToDecimal.txt" 101
 
 
 * The turing machine command set must follow the following conventions:
- * Each line must be in the form **[Input State]** **[Read]** **[Write]** **[Direction]** **[Output State]** called a quintuple.
- * Input & Output State symbols can be strings of any length >= 1.
- * Read & Write symbols can be any single character except whitespace (Use '_' to represent whitespace).
- * Direction can be 'L' for move left, 'R' for move right or '*' for do not move.
- * Each symbol in a quintuple must be separated by at least one space.
- * Each quintuple must be separated by a breakline.
+  * Each line must be in the form **[Input State]** **[Read]** **[Write]** **[Direction]** **[Output State]** called a quintuple.
+  * Input & Output State symbols can be strings of any length >= 1.
+  * Read & Write symbols can be any single character except whitespace (Use '_' to represent whitespace).
+  * Direction can be 'L' for move left, 'R' for move right or '*' for do not move.
+  * Each symbol in a quintuple must be separated by at least one space.
+  * Each quintuple must be separated by a newline.
+  * The asterisk '*' symbol is special :
+    * When used for **[Read]** : it means read any character (useful when used in conjunction with other rule(s) which match on specific characters).
+    * When used for **[Write]** : it means do not change the current value.
+    * When used for **[Direction]** : it means do not move.
 
 Example Turing Machine Commands File: BinaryToDecimal.txt
 
